@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon backend/server.js",
-    "start": "node backend/server.js",
-    "build":"npm install && npm install --prefix frontend && npm run build --prefix frontend"
-
-  },
+  "dev": "nodemon backend/server.js",
+  "start": "node backend/server.js",
+  "postinstall": "npm install --prefix frontend",
+  "build": "npm run build --prefix frontend"
+}
+,
   "keywords": [],
   "author": "",
   "license": "ISC",
