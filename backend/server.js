@@ -11,7 +11,7 @@ import path from "path"
 const app = express();
 import cors from 'cors';
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: process.env.CLIENT_URL,
   credentials:true
 }))
 
