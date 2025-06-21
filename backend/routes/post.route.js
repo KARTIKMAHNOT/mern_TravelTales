@@ -10,7 +10,7 @@ router.get('/allposts',getAllPosts)
 router.get('/getrecommended',getRecommendedPosts);
 router.get('/getpost/:id',getPost);
 router.put('/togglelike/:id',protectRoute,toggleLike)
-router.get("/search", async (req, res) => {
+router.get("/search-posts", async (req, res) => {
     try {
       const { query, page = 1, limit = 8 } = req.query;
   
