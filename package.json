@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+"scripts": {
   "dev": "nodemon backend/server.js",
   "start": "node backend/server.js",
-  "postinstall": "npm install --prefix frontend",
+  "postinstall": "npm install --prefix frontend --include=dev",
   "build": "npm run build --prefix frontend"
 }
+
 ,
   "keywords": [],
   "author": "",
