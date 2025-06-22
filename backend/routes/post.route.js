@@ -64,7 +64,6 @@ router.get("/search-posts", async (req, res) => {
       $or: [
         { caption: regex },
         { description: regex },
-        { location: regex },
         { "location.city": { $exists: true, $regex: regex } },
         { "location.country": { $exists: true, $regex: regex } },
       ],
