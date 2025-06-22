@@ -10,10 +10,14 @@ import commentRoutes from './routes/comment.route.js'
 import path from "path"
 const app = express();
 import cors from 'cors';
+import cors from 'cors';
+
+const allowedOrigin = process.env.CLIENT_URL || 'http://localhost:5173';
+
 app.use(cors({
-  origin: process.env.CLIENT_URL,
-  credentials:true
-}))
+  origin: allowedOrigin,
+  credentials: true
+}));
 
 const __dirname = path.resolve()
 app.use(express.json({ limit: '10mb' })); // You can set '50mb' if needed
