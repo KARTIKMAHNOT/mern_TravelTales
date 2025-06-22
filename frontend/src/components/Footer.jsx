@@ -105,17 +105,17 @@ const Footer = () => {
             {[
               {
                 icon: <Mail className="w-5 h-5" />,
-                href: "mailto:2023ucp1717@mnit.ac.in",
+                href: "mailto:hello@traveltales.com",
                 label: "Mail",
               },
               {
                 icon: <Github className="w-5 h-5" />,
-                href: "https://github.com/KARTIKMAHNOT",
+                href: "https://github.com/traveltales",
                 label: "GitHub",
               },
               {
                 icon: <Linkedin className="w-5 h-5" />,
-                href: "https://www.linkedin.com/in/kartik-mahnot-17b743280/",
+                href: "https://linkedin.com/company/traveltales",
                 label: "LinkedIn",
               },
             ].map((item, index) => (
@@ -149,7 +149,7 @@ const Footer = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
         >
-          Crafted with 💚 using MERN Stack | Zustand | Cloudinary 
+          Crafted with 💚 using MERN Stack, Zustand, Framer Motion & Keen Slider
         </motion.p>
       </div>
 

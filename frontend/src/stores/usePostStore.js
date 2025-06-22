@@ -134,7 +134,7 @@ export const usePostStore = create((set,get)=>({
     fetchSearchedPosts: async (query, page = 1, limit = 8) => {
       set({ loading: true });
       try {
-        const res = await axios.get(`/posts/search-posts`, {
+        const res = await axios.get(`/posts/search`, {
           params: { 
             query: query.trim(), 
             page, 
