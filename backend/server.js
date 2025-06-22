@@ -27,13 +27,15 @@ app.use('/api/comments',commentRoutes)
 
 if (process.env.NODE_ENV === "production") {
   console.log("🛡️ Production mode detected");
-  
+
   app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
-  app.get("*", (req, res) => {
+  // Use "/*" instead of "*" to avoid path-to-regexp errors
+  app.get("/*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
   });
 }
+
 
 app.listen(process.env.PORT || 5000, () => {
   console.log(`Server is running on port ${process.env.PORT || 3000}`);
