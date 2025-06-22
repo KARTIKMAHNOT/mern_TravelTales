@@ -10,7 +10,7 @@ import commentRoutes from './routes/comment.route.js'
 import path from "path"
 const app = express();
 import cors from 'cors';
-import cors from 'cors';
+
 
 const allowedOrigin = process.env.CLIENT_URL || 'http://localhost:5173';
 
