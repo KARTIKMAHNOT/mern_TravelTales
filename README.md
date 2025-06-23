@@ -23,7 +23,6 @@
   - Description
   - Location (City or Country)
   - Creator Name
-- 🧠 **Smart Recommendations** — See posts similar to your interests
 - 📱 **Responsive Design** — Optimized for all devices with smooth animations
 
 ---
